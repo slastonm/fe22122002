@@ -1,0 +1,72 @@
+h1{
+   color:brown; 
+}
+h2{
+    color:rgb(25, 96, 227);
+}
+/* style title */
+p{
+    color: gold;
+}
+.green-text{
+    color: green;
+}
+.bold{
+    font-weight: bold;
+}
+.green-text.bold{
+    text-decoration: underline;
+}
+#main{
+    color:lightblue;
+}
+*{
+    /* text-transform: uppercase; */
+}
+/* h3{
+    color:bisque;
+}
+h4{
+    color:bisque;
+} */
+h4,h3{
+    color:bisque;
+}
+p span{
+    color:red;
+}
+p>span{
+   
+}
+span+span+span{
+     color:rgb(206, 12, 142);
+}
+
+a[href="index.html"]{
+    color:rgb(206, 12, 142);
+}
+ul li:first-child{
+    font-size: 40px;
+}
+ul li:nth-child(3){
+    font-size: 50px;
+}
+div p:last-child{
+    font-size: 30px;
+}
+
+.size{
+    width: 250px;
+    height: 200px;
+    /* padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-right: 10px; */
+    padding: 20px 10px;
+    margin-bottom: 100px;
+    /* margin: 50px 100px; */
+    margin: 50px auto;
+    border: 3px solid black;
+}
+
+

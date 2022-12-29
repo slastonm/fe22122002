@@ -2,6 +2,11 @@
     background-color: red;
 } */
 
+
 div p:nth-child(odd){
     background-color: red;
+}
+div{
+    width: 350px;
+    margin:auto;
 }

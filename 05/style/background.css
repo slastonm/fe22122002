@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+.simple-background{
+    width: 480px;
+    height: 480px;
+    background-color: yellow;
+    background-image: url("../img/smile.png");
+    color: white;
+}
+.double-bg{
+    height: 600px;
+    background-image: url("../img/avatar.png"),url("../img/1.webp");
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-position: top 50px left 200px;
+}
+.bg-size{
+    border: 5px solid black;
+    height: 700px;
+    background-image: url("../img/avatar.png");
+    /* background-size: cover; */
+    /* background-size: contain; */
+    /* background-size: 100px 100px; */
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.big-bg{
+    width: 1200px;
+    padding: 400px 500px;
+    height: 800px;
+    margin: 0 auto 300px;
+    color:white;
+    background-image: url("../img/bg.jpeg");
+    background-size: 80%;
+    overflow: hidden;
+    background-attachment: fixed;
+}

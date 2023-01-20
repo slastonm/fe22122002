@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+}
+.parallax{
+    padding-top: 200px;
+    background-image: url("../img/bg.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100%;
+}
+header, section{
+    padding: 50px;
+    margin-bottom: 300px;
+    background-color: #fff;
+    font-size: 25px;
+    
+}
+.fb{
+    display: inline-block;
+    margin-right:10px;
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/sprite-icon-29.jpg");
+    background-position: -29px -24px;
+    border: none;
+    background-color: transparent;
+}
+.fb:hover{
+    background-position: -29px -106px;
+}
+.fb.non-active{
+    background-position: -29px -191px;
+}
+.fb::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    /* background-image: url(); */
+
+}

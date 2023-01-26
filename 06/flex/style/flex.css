@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+form{
+    padding: 50px;
+}
+input{
+    display: inline-block;
+    border-top:none;
+    border-right: none;
+    border-left: none;
+
+    border-bottom: 2px solid #333;
+    padding: 15px 15px 35px 15px;
+}
+input:focus{
+    background-color: red;
+    outline: none;
+}
+
+.block{
+    padding: 20px;
+    background-color: yellow;
+    margin-bottom: 50px;
+}
+.i-flex{
+    display: inline-flex; 
+    /* display inline-block + flex властивості */
+}
+.flex{
+    height: 400px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    /* flex-flow: flex-direction + flex-wrap */
+    /* flex-flow: row-reverse wrap; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    /* align-items: stretch; */
+    align-items: flex-end;
+    /* gap:100px 200px; */
+    /* row-gap: 50px;
+    column-gap: 150px; */
+}
+.flex-item{
+    width: 20%;
+    background-color: blue;
+    padding: 20px;
+    border:1px solid #fff;
+}
+.flex-item:nth-child(1){
+    /* order: 1; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+    height: 50px;
+    /* align-self: center; */
+}
+.flex-item:nth-child(2){
+    height: 150px;
+    /* order: 3; */
+    /* flex-grow: 3; */
+    /* flex-shrink: 4; */
+    /* align-self: flex-end; */
+
+
+}
+.flex-item:nth-child(3){
+    /* height: 300px; */
+    /* order: -2; */
+    flex-grow: 3;
+    /* flex-shrink: 4; */
+    align-self: flex-start;
+}

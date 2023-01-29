@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+}
+.left-text,
+.right-text{
+    width: 100%;
+    /* padding: 50px; */
+}
+.left-text{
+    background-color: yellow;
+    /* font-size: 30px; */
+}
+.right-text{
+    background-color: blue;
+    /* font-size: 14px; */
+}
+/* max-width: менше цього значення */
+/* min-width: більше цього значення */
+
+/* @media(max-width:1600px){
+   .responsive{
+    flex-direction: column;
+   } 
+}
+@media(max-width:1400px){
+    .responsive{
+        flex-direction: column-reverse;
+    } 
+    .left-text{
+        font-size: 20px;
+    }
+ }
+  */
+
+/* @media(min-width:400px){
+    .responsive{
+        flex-direction: column;
+    } 
+}
+@media(min-width:600px){
+    .responsive{
+        flex-direction: column-reverse;
+    } 
+    .left-text{
+        font-size: 20px;
+    }
+} */
+/* 
+@media screen 
+    and (min-width:400px)
+    and (max-width:800px){
+    .left-text{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .wrapper{
+        width: 96%;
+    }
+} */
+
+/* @media(400px<= width <=1000px){
+    .wrapper{
+        width: 300px;
+        flex-direction: column-reverse;
+    }
+    .left-text{
+        font-size: 14px;
+    }
+}
+@media(max-width:800px){
+    .pc-br{
+        display: none;
+    }
+}
+
+@media(max-width:400px){
+    .pc-br{
+        display: block;
+    }
+}
+.show-menu{
+    display: none;
+    opacity: 0.5;
+}
+.show-menu.active{
+    background-color: green;
+}
+
+@media(max-width:600px){
+    nav{
+        display: none;
+    }
+    .show-menu{
+        display: block;
+        opacity: 1;
+        background-color: rgba(6, 104, 143, 0.2);
+    }
+}
+@media print {
+    body{
+        background-color: transparent;
+    }
+    img{
+        display: none;
+    }
+}
+@media(max-aspect-ratio: 3/2){
+    body{
+        background-color: pink;
+    }
+}
+
+.wrapper{ 
+    width: 1200px;
+    margin: 0 auto;
+}
+@media(max-width:1220px){
+    .wrapper{
+        width: 90%;
+    }
+} */
+
+/* em */
+/* rem */
+body,html{
+    font-size: 20px;
+}
+/* .em{
+    font-size: 2em;
+    padding: 2em;
+} */
+@media(max-width:1200px){
+    body,html{
+        font-size: 10px;
+    }
+}
+.rem{
+    font-size: 20px;
+    width: 20rem;
+    padding: 1rem;
+}
+button{
+    display: inline-block;
+    padding: 1em 2em;
+
+}
+
+/* vw  */
+/* vh */
+.background-full{
+    width: 50vw;
+    /* max-width: 600px; */
+    min-height: 100vh;
+    padding: 20px;
+}
+.green{
+    background-color: green;
+    font-size: 1.8vw;
+}
+.gray{
+    background-color: gray;
+}
+/* min-heiht */
+/* max-heiht */
+/* min-width */
+/* max-widht */
+@media(max-width:1200px){
+    .green{
+        font-size: 14px;
+    }
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.w-1{
+
+}
+.w-6{
+    width: 50%;
+}
+/* ... */
+.w-12{
+    width: 100%;
+}
+@media(max-width:400px){
+    .w-6{
+        width: 100%;
+    }
+}

@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --main-color:rgb(238, 9, 9);
+    --title-font-size:20px;
+}
+h1{
+    color:var(--main-color);
+    font-size: var(--title-font-size);
+}
+h2{
+    color: var(--main-color);
+    font-size: var(--title-font-size);
+}
+h3{
+    --main-color: green;
+    color:var(--main-color);
+}
+h4{
+    color:var(--main-color);
+}
+@media(max-width:1400px){
+    :root{
+        --main-color:rgb(40, 238, 9);
+        --title-font-size:40px;
+    }
+}

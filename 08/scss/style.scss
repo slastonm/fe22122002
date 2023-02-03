@@ -1,0 +1,115 @@
+// sass -> scss
+// less 
+// stylus 
+$main-color:#333;
+$title-color:red;
+$title-color-hover:yellow;
+nav{
+    background-color: $main-color;
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+        }
+    }
+}
+h1{
+    position: relative;
+    display: inline-block;
+    &::after{
+        content:"";
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: $title-color-hover;
+        right: -30px;
+    }
+    &:hover{
+        color: $title-color;
+        font-size: 30px;
+        span{
+            color:yellow;
+        }
+    }
+}
+ul{
+    li{
+        background-color: black;
+        &:nth-child(2){
+            background-color: $title-color;
+            &:hover{
+                background-color: $title-color-hover;
+            }
+        }
+        &:nth-child(4){
+            background-color: red;
+        }
+    }
+}
+.about{
+    &-title{
+        color:red;
+        &:hover{
+            // color:darken($title-color, 50%);
+            // color:lighten($title-color, 20%);
+            color:desaturate(yellow, 90%);
+            font-size: 40px;
+
+
+        }
+    }
+    &-text-container{
+        color:gray;
+    }
+    &.update{
+        background-color: #ccc;
+
+    }
+    @media(max-width:1600px){
+        background-color: $main-color;
+        h2{
+           text-decoration: underline; 
+        }
+        &.update{
+            background-color: green;
+        }
+    }
+    @media(max-width:768px){
+
+    }
+}
+
+.button{
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    &:hover{
+        background-color: yellow;
+    }
+}
+.my-button{
+    @extend .button;
+    background-color: blueviolet;
+}
+.block-1{
+    padding: 10px;
+}
+.block-2{
+    padding: 20px;
+}
+
+@mixin square($size, $radius:0){
+    width: $size;
+    height: $size;
+    @if $radius !=0{
+        border-radius: $radius;
+    }
+}
+.avatar{
+    background-color: #333;
+    margin: 20px;
+    @include square(50px,50px);
+}

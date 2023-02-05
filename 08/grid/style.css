@@ -4,11 +4,12 @@
 .grid{
     display: grid;
     /* grid-template-columns: 100px 250px 200px; */
-    /* grid-template-columns: repeat(3, 100px) 200px 150px; */
-    grid-template-columns: minmax(300px, 1fr) 2fr 1fr;
+    grid-template-columns: repeat(3, 100px) 200px 150px;
+    /* grid-template-columns: minmax(300px, 1fr) 2fr 1fr; */
     grid-column-gap: 10px;
     grid-row-gap:30px;
-
+    /* justify-content: end; */
+    /* align-items: center; */
     /* grid-template-rows: 300px 100px 300px; */
 }
 .grid>div{
@@ -18,11 +19,80 @@
     font-size: 20px;
 }
 .grid div:nth-child(2){
-    grid-column-start: 2;
+    /* grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 3; */
+    justify-self: center;
+    align-self: center;
+}
+.grid div:nth-child(3){
+    /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    justify-self: end;
+    align-self: end;
+}
+.grid div:nth-child(4){
+    /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    justify-self: start;
+    align-self: start;
 }
 .grid-img{
     width: 100%;
+}
+.grid-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "left-side-bar header header"
+    "left-side-bar content content"
+    "left-side-bar article right-side-bar"
+    "left-side-bar footer footer";
+}
+header{
+    grid-area: header;
+    background-color: orange;
+}
+aside{
+    grid-area: left-side-bar;
+    background-color: green;
+}
+.grid-area div:nth-child(3){
+    grid-area: content;
+    background-color: rgb(231, 25, 90);
+}
+.grid-area div:nth-child(4){
+    grid-area: right-side-bar;
+    background-color: green;
+}
+.grid-area div:nth-child(5){
+    grid-area: article;
+    background-color: rgb(53, 185, 237);
+}
+.grid-area div:nth-child(6){
+    grid-area: footer;
+    background-color: rgb(121, 232, 23);
+}
+@media(max-width:1600px){
+    .grid-area{
+        grid-template-areas: 
+        "header header header"
+        "left-side-bar left-side-bar left-side-bar"
+        "content content ."
+        "article article right-side-bar"
+        "footer footer footer";
+    }
+}
+.content-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.content-grid>div{
+    padding: 40px;
+    color:#fff;
 }

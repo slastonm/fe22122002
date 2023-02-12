@@ -1,0 +1,116 @@
+body{
+    position: relative;
+}
+/* div{
+    background-color: black;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+} */
+path{
+    fill: red;
+}
+/* @keyframes example {
+    from {
+        background-color: blue;
+    }
+    to{
+        background-color: yellow;
+    }
+} */
+@keyframes pro{
+    0%{
+        background-color: black;
+        top: 0;
+        left: 0;
+        color:white;
+    }
+    25%{
+        background-color: red;
+        top: 0;
+        left: 100px;
+        color:black;
+    }
+    25%{
+        background-color: red;
+        top: 0;
+        left: 100px;
+    }
+    50%{
+        background-color: red;
+        top: 50px;
+        left: 100px;
+    }
+    100%{
+        background-color: black;
+        top: 50px;
+        left: 0px;
+        color:white;
+    }
+}
+div{
+    animation-name: pro;
+    animation-duration: 10s;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    /* animation-delay: 10s; */
+    animation-timing-function: cubic-bezier(.7,.17,1,-0.07);
+    animation: example 5s linear 2s infinite;
+}
+
+/* button{
+    display: inline-block;
+    border: 1px solid black;
+    background-color: yellow;
+    color: black;
+    overflow: hidden;
+    padding: 20px 40px;
+    position: relative;
+    transition: all;
+    transition-duration: 3s;
+    transition-timing-function:  cubic-bezier(.7,.17,1,-0.07);
+    /* transition-delay: 5s; */
+/* } */
+button>div{
+    position: absolute;
+    top:-100px;
+    padding: 5px;
+    background-color: wheat;
+    color: black;
+    transition: all;
+    transition-duration: 3s;
+}
+button:hover{
+    background-color: orangered;
+}
+button:hover div{
+    top:20px;
+} 
+.transform{
+    margin: 100px auto;
+    width: 400px;
+    height: 300px;
+    background-color: yellow;
+    transition: all;
+    transition-duration: 1s;
+}
+.transform:hover{
+    /* transform: rotate(90deg); */
+    /* rotate: -20deg; */
+    /* transform: scale(0.5, 0.5); */
+    /* scale: 0.9; */
+    /* transform: skew(20deg, 0deg); */
+    transform: rotateY(40deg);
+    /* rotateX */
+}
+.my-btn{
+    transition: all;
+    transition-duration: 1s;
+}
+.my-btn:hover{
+
+}
+a{
+    background-color: black;
+}

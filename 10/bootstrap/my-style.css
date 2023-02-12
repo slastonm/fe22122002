@@ -1,0 +1,20 @@
+header{
+    background-color: yellow;
+}
+.first{
+    background-color: lightblue;
+}
+.second{
+    background-color: rgb(138, 138, 4);
+}
+
+body .col-md-5 .btn{
+    background-color: red;
+}
+.btn.my-btn{
+    padding: 10px;
+}
+
+ul li{
+    color: red;
+}
